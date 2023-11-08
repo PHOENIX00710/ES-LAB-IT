@@ -1,0 +1,80 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,DATA,READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 40001000        DCD              0X40001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode,CODE,READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 F04F 0017       mov              r0,#23
+   12 00000004 F04F 0123       mov              r1,#0x23
+   13 00000008 F04F 022A       mov              r2,#2_101010
+   14 0000000C E7FE    stop    b                stop
+   15 0000000E                 end
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=familiar
+.d -ofamiliar.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\AR
+M\Inc\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=familiar.lst familiar.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file familiar.asm
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file familiar.asm
+   Uses
+      At line 2 in file familiar.asm
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file familiar.asm
+   Uses
+      At line 5 in file familiar.asm
+      At line 9 in file familiar.asm
+
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file familiar.asm
+   Uses
+      None
+Comment: mycode unused
+stop 0000000C
+
+Symbol: stop
+   Definitions
+      At line 14 in file familiar.asm
+   Uses
+      At line 14 in file familiar.asm
+Comment: stop used once
+3 symbols
+336 symbols in table

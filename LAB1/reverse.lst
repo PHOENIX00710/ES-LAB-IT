@@ -1,0 +1,133 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,CODE,READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 40001000        DCD              0x40001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode,CODE,READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 4807            LDR              r0,=(src+(4*10-4))
+   12 00000002 4908            LDR              r1,=src
+   13 00000004 F04F 0205       MOV              r2,#5
+   14 00000008 6803    up      LDR              r3,[r0]
+   15 0000000A 680C            LDR              r4,[r1]
+   16 0000000C 600B            STR              r3,[r1]
+   17 0000000E 6004            STR              r4,[r0]
+   18 00000010 F1A0 0004       SUB              r0,#4
+   19 00000014 F101 0104       ADD              r1,#04
+   20 00000018 3A01            SUBS             r2,#01
+   21 0000001A D1F5            BNE              up
+   22 0000001C E7FE    stop    b                stop
+   23 0000001E 00 00 00000024 
+              00000000         AREA             dataseg,DATA,READWRITE
+   24 00000000 00000000 
+              00000000 
+              00000000 
+              00000000 
+              00000000 
+              00000000 
+              00000000 
+              00000000 
+              00000000 
+              00000000 src     DCD              0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0
+,0x0,0x0
+   25 00000028                 END
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=reverse.
+d -oreverse.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\
+Inc\NXP\LPC17xx --predefine="__EVAL SETA 1" --list=reverse.lst reverse.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file reverse.asm
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file reverse.asm
+   Uses
+      At line 2 in file reverse.asm
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file reverse.asm
+   Uses
+      At line 5 in file reverse.asm
+      At line 9 in file reverse.asm
+
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file reverse.asm
+   Uses
+      None
+Comment: mycode unused
+stop 0000001C
+
+Symbol: stop
+   Definitions
+      At line 22 in file reverse.asm
+   Uses
+      At line 22 in file reverse.asm
+Comment: stop used once
+up 00000008
+
+Symbol: up
+   Definitions
+      At line 14 in file reverse.asm
+   Uses
+      At line 21 in file reverse.asm
+Comment: up used once
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+dataseg 00000000
+
+Symbol: dataseg
+   Definitions
+      At line 23 in file reverse.asm
+   Uses
+      None
+Comment: dataseg unused
+src 00000000
+
+Symbol: src
+   Definitions
+      At line 24 in file reverse.asm
+   Uses
+      At line 11 in file reverse.asm
+      At line 12 in file reverse.asm
+
+2 symbols
+341 symbols in table

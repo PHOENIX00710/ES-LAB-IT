@@ -1,0 +1,120 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 AREA             RESET,CODE,READONLY
+    2 00000000                 EXPORT           __Vectors
+    3 00000000         __Vectors
+    4 00000000 40001000        DCD              0x40001000
+    5 00000004 00000000        DCD              Reset_Handler
+    6 00000008                 ALIGN
+    7 00000008                 AREA             mycode,CODE,READONLY
+    8 00000000                 ENTRY
+    9 00000000                 EXPORT           Reset_Handler
+   10 00000000         Reset_Handler
+   11 00000000 4805            ldr              r0,=num
+   12 00000002 4906            ldr              r1,=ans
+   13 00000004 6802            ldr              r2,[r0]
+   14 00000006 FB02 2302       mla              r3,r2,r2,r2
+   15 0000000A EA4F 0353       lsr              r3,#1
+   16 0000000E 600B            str              r3,[r1]
+   17 00000010 E7FE    stop    b                stop
+   18 00000012 00 00 00000010 
+                       num     dcd              0x10
+   19 00000018 00000000 
+              00000000         AREA             DATASEG,DATA,READWRITE
+   20 00000000 00000000 
+                       ans     dcd              0x0
+   21 00000004                 end
+Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=mla.d -o
+mla.o -IC:\Keil\ARM\RV31\INC -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\NXP\
+LPC17xx --predefine="__EVAL SETA 1" --list=mla.lst mla.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+RESET 00000000
+
+Symbol: RESET
+   Definitions
+      At line 1 in file mla.asm
+   Uses
+      None
+Comment: RESET unused
+__Vectors 00000000
+
+Symbol: __Vectors
+   Definitions
+      At line 3 in file mla.asm
+   Uses
+      At line 2 in file mla.asm
+Comment: __Vectors used once
+2 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 10 in file mla.asm
+   Uses
+      At line 5 in file mla.asm
+      At line 9 in file mla.asm
+
+mycode 00000000
+
+Symbol: mycode
+   Definitions
+      At line 7 in file mla.asm
+   Uses
+      None
+Comment: mycode unused
+num 00000014
+
+Symbol: num
+   Definitions
+      At line 18 in file mla.asm
+   Uses
+      At line 11 in file mla.asm
+Comment: num used once
+stop 00000010
+
+Symbol: stop
+   Definitions
+      At line 17 in file mla.asm
+   Uses
+      At line 17 in file mla.asm
+Comment: stop used once
+4 symbols
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+DATASEG 00000000
+
+Symbol: DATASEG
+   Definitions
+      At line 19 in file mla.asm
+   Uses
+      None
+Comment: DATASEG unused
+ans 00000000
+
+Symbol: ans
+   Definitions
+      At line 20 in file mla.asm
+   Uses
+      At line 12 in file mla.asm
+Comment: ans used once
+2 symbols
+341 symbols in table

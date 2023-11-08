@@ -1,0 +1,37 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\H\ES LAB\Project\draft_Ausaf\ausaf.uvproj
+Project File Date:  11/08/2023
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling startup_LPC17xx.s...
+compiling ausaf.c...
+ausaf.c(68): warning:  #951-D: return type of function "main" must be "int"
+ausaf.c(74): warning:  #140-D: too many arguments in function call
+ausaf.c(76): warning:  #1-D: last line of file ends without a newline
+ausaf.c(70): warning:  #177-D: variable "dist" was declared but never referenced
+compiling system_LPC17xx.c...
+linking...
+Program Size: Code=1724 RO-data=236 RW-data=56 ZI-data=608  
+"ausaf.axf" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1724 RO-data=236 RW-data=56 ZI-data=608  
+"ausaf.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling ausaf.c...
+ausaf.c(68): warning:  #951-D: return type of function "main" must be "int"
+ausaf.c(74): warning:  #140-D: too many arguments in function call
+ausaf.c(76): warning:  #1-D: last line of file ends without a newline
+ausaf.c(70): warning:  #177-D: variable "dist" was declared but never referenced
+linking...
+Program Size: Code=1724 RO-data=236 RW-data=56 ZI-data=608  
+"ausaf.axf" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1724 RO-data=236 RW-data=56 ZI-data=608  
+"ausaf.axf" - 0 Error(s), 0 Warning(s).

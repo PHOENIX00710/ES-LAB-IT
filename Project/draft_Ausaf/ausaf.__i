@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork 
+-I E:\Keil\ARM\RV31\INC 
+-I E:\Keil\ARM\CMSIS\Include 
+-I E:\Keil\ARM\Inc\NXP\LPC17xx 
+-o "ausaf.o" --omf_browse "ausaf.crf" --depend "ausaf.d" "ausaf.c"

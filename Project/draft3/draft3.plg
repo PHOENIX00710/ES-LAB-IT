@@ -1,0 +1,53 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\H\ES LAB\Project\draft3\draft3.uvproj
+Project File Date:  11/08/2023
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling startup_LPC17xx.s...
+compiling proj_draft3.c...
+proj_draft3.c(24): warning:  #1295-D: Deprecated declaration stopTimer0 - give arg types
+proj_draft3.c(143): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+proj_draft3.c(144): warning:  #223-D: function "strcpy" declared implicitly
+proj_draft3.c(145): warning:  #223-D: function "strcat" declared implicitly
+proj_draft3.c(192): warning:  #1-D: last line of file ends without a newline
+compiling system_LPC17xx.c...
+linking...
+Program Size: Code=7992 RO-data=424 RW-data=60 ZI-data=612  
+"draft3.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=7992 RO-data=424 RW-data=60 ZI-data=612  
+"draft3.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling proj_draft3.c...
+proj_draft3.c(24): warning:  #1295-D: Deprecated declaration stopTimer0 - give arg types
+proj_draft3.c(143): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+proj_draft3.c(144): warning:  #223-D: function "strcpy" declared implicitly
+proj_draft3.c(145): warning:  #223-D: function "strcat" declared implicitly
+proj_draft3.c(196): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=8172 RO-data=424 RW-data=60 ZI-data=612  
+"draft3.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=8172 RO-data=424 RW-data=60 ZI-data=612  
+"draft3.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling proj_draft3.c...
+proj_draft3.c(24): warning:  #1295-D: Deprecated declaration stopTimer0 - give arg types
+proj_draft3.c(158): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *restrict"
+proj_draft3.c(159): warning:  #223-D: function "strcpy" declared implicitly
+proj_draft3.c(160): warning:  #223-D: function "strcat" declared implicitly
+proj_draft3.c(211): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=8224 RO-data=424 RW-data=60 ZI-data=612  
+"draft3.axf" - 0 Error(s), 5 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=8224 RO-data=424 RW-data=60 ZI-data=612  
+"draft3.axf" - 0 Error(s), 0 Warning(s).

@@ -1,0 +1,55 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+E:\H\ES LAB\LAB5\q1\q1.uvproj
+Project File Date:  11/07/2023
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling startup_LPC17xx.s...
+compiling q1.c...
+q1.c(7): error:  #20: identifier "LPC_PINSCON" is undefined
+q1.c(11): error:  #20: identifier "LPC_GPIO" is undefined
+q1.c(16): warning:  #1-D: last line of file ends without a newline
+compiling system_LPC17xx.c...
+Target not created
+Build target 'Target 1'
+compiling q1.c...
+q1.c(7): error:  #20: identifier "LPC_PINSCON" is undefined
+q1.c(11): error:  #20: identifier "LPC_GPIO" is undefined
+q1.c(16): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'Target 1'
+compiling q1.c...
+q1.c(7): error:  #20: identifier "LPC_PINSCON" is undefined
+q1.c(16): warning:  #1-D: last line of file ends without a newline
+Target not created
+Build target 'Target 1'
+compiling q1.c...
+q1.c(16): warning:  #1-D: last line of file ends without a newline
+linking...
+Program Size: Code=1432 RO-data=236 RW-data=4 ZI-data=612  
+"q1.axf" - 0 Error(s), 1 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1432 RO-data=236 RW-data=4 ZI-data=612  
+"q1.axf" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling q1.c...
+q1.c(4): error:  #40: expected an identifier
+q1.c(20): warning:  #1-D: last line of file ends without a newline
+q1.c(7): warning:  #177-D: variable "i" was declared but never referenced
+Target not created
+Build target 'Target 1'
+compiling q1.c...
+q1.c(19): warning:  #1-D: last line of file ends without a newline
+q1.c(6): warning:  #177-D: variable "i" was declared but never referenced
+linking...
+Program Size: Code=1432 RO-data=236 RW-data=4 ZI-data=612  
+"q1.axf" - 0 Error(s), 2 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=1432 RO-data=236 RW-data=4 ZI-data=612  
+"q1.axf" - 0 Error(s), 0 Warning(s).

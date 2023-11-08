@@ -1,0 +1,16 @@
+	AREA RESET,DATA,READONLY
+	EXPORT __Vectors
+__Vectors
+	DCD 0X10004000
+	DCD Reset_Handler
+	ALIGN
+	AREA mycode,CODE,READONLY
+	ENTRY
+	EXPORT Reset_Handler
+Reset_Handler
+
+stop b stop
+num dcd 0x0
+	AREA DATASEG,DATA,READWRITE
+dst dcd 0x0
+	end

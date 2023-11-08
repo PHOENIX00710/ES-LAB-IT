@@ -1,0 +1,1 @@
+familiar.o: familiar.asm

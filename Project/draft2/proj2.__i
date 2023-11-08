@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork 
+-I E:\Keil\ARM\RV31\INC 
+-I E:\Keil\ARM\CMSIS\Include 
+-I E:\Keil\ARM\Inc\NXP\LPC17xx 
+-o "proj2.o" --omf_browse "proj2.crf" --depend "proj2.d" "proj2.c"
